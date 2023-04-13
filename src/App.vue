@@ -111,6 +111,16 @@ header {
 main {
   height: calc(100vh - 232px);
   background-color: yellow;
+
+  .banner_top {
+    height: 100px;
+    background-color: black;
+  }
+
+  .banner_center {
+    height: 125px;
+    background-color: blue;
+  }
 }
 
 footer {
