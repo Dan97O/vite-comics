@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-  <header class="my-3">
+  <header>
     <div class="container">
       <div class="row">
         <div class="col-4 d-flex align-items-center">
@@ -115,7 +115,7 @@ export default {
           <div class="col-6">
             <div class="row">
               <div class="col-4">
-                <ul class="pt-3">
+                <ul class="pt-5">
                   <li>
                     <a href="#">
                       <h4>
@@ -181,7 +181,7 @@ export default {
               </div>
               <!-- /col-4 -->
               <div class="col-4">
-                <ul class="pt-3">
+                <ul class="pt-5">
                   <li>
                     <a href="#">
                       <h4>
@@ -248,7 +248,7 @@ export default {
               </div>
               <!-- /col-4 -->
               <div class="col-4">
-                <ul class="pt-3">
+                <ul class="pt-5">
                   <li>
                     <a href="#">
                       <h4>
@@ -338,6 +338,11 @@ export default {
 
 <style lang="scss">
 /* #region Utilities */
+body {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
 ul {
   list-style: none;
 }
@@ -346,11 +351,15 @@ ul {
 
 /* #region Header */
 header {
-  height: 100px;
+  display: flex;
+  align-items: center;
+  height: 125px;
   background-color: white;
 
   ul {
     list-style: none;
+    margin: 0;
+    flex-wrap: wrap;
 
     a {
       text-decoration: none;
@@ -368,7 +377,7 @@ header {
 /* #region Main */
 
 main {
-  height: calc(100vh - 232px);
+  height: calc(100vh - 250px);
   background-color: yellow;
 
   .banner_top {
@@ -411,7 +420,7 @@ main {
 
   .banner_bottom {
     background-image: url(./assets/img/footer-bg.jpg);
-    height: calc(100vh - 232px - 225px);
+    height: calc(100vh - 250px - 225px);
 
     ul {
       list-style: none;
@@ -445,7 +454,7 @@ main {
 
 /* #region Footer */
 footer {
-  height: 100px;
+  height: 125px;
   background-color: #303030;
   position: relative;
   z-index: 500;
