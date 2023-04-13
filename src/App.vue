@@ -115,7 +115,7 @@ export default {
           <div class="col-6">
             <div class="row">
               <div class="col-4">
-                <ul class="pt-5">
+                <ul class="pt-4">
                   <li>
                     <a href="#">
                       <h4>
@@ -181,7 +181,7 @@ export default {
               </div>
               <!-- /col-4 -->
               <div class="col-4">
-                <ul class="pt-5">
+                <ul class="pt-4">
                   <li>
                     <a href="#">
                       <h4>
@@ -248,7 +248,7 @@ export default {
               </div>
               <!-- /col-4 -->
               <div class="col-4">
-                <ul class="pt-5">
+                <ul class="pt-4">
                   <li>
                     <a href="#">
                       <h4>
@@ -353,8 +353,12 @@ ul {
 header {
   display: flex;
   align-items: center;
-  height: 125px;
+  height: 100px;
   background-color: white;
+
+  img {
+    height: 80px;
+  }
 
   ul {
     list-style: none;
@@ -377,7 +381,7 @@ header {
 /* #region Main */
 
 main {
-  height: calc(100vh - 250px);
+  height: calc(100vh - 200px);
   background-color: yellow;
 
   .banner_top {
@@ -420,22 +424,27 @@ main {
 
   .banner_bottom {
     background-image: url(./assets/img/footer-bg.jpg);
-    height: calc(100vh - 250px - 225px);
+    height: calc(100vh - 200px - 225px);
 
     ul {
       list-style: none;
       padding: 0;
 
-      a {
-        text-decoration: none;
-        color: rgb(165, 165, 165);
+      li {
+        line-height: 18px;
 
-        &:hover {
-          color: rgb(232, 232, 240);
-        }
+        a {
+          text-decoration: none;
+          color: rgb(165, 165, 165);
+          font-size: 12px;
 
-        h4 {
-          color: white;
+          &:hover {
+            color: rgb(232, 232, 240);
+          }
+
+          h4 {
+            color: white;
+          }
         }
       }
     }
@@ -444,7 +453,7 @@ main {
       background-image: url(./assets/img/dc-logo-bg.png);
       height: 600px;
       background-repeat: no-repeat;
-      margin-top: -5rem;
+      margin-top: -7rem;
       z-index: 0;
     }
   }
@@ -454,7 +463,7 @@ main {
 
 /* #region Footer */
 footer {
-  height: 125px;
+  height: 100px;
   background-color: #303030;
   position: relative;
   z-index: 500;
