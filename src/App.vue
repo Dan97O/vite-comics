@@ -64,6 +64,8 @@ export default {
   <!-- /header -->
 
   <main>
+    <div class="banner_top"></div>
+    <div class="banner_center"></div>
 
   </main>
   <!-- /main -->
@@ -103,5 +105,16 @@ header {
       }
     }
   }
+}
+
+
+main {
+  height: calc(100vh - 232px);
+  background-color: yellow;
+}
+
+footer {
+  height: 100px;
+  background-color: greenyellow;
 }
 </style>
