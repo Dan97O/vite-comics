@@ -9,14 +9,6 @@ export default {
 
 </script>
 
-
-
-
-
-
-
-
-
 <template>
   <header class="my-3">
     <div class="container">
@@ -24,6 +16,7 @@ export default {
         <div class="col-4 d-flex align-items-center">
           <img class="img-fluid" src="./assets/img/dc-logo.png" alt="">
         </div>
+        <!-- /col-4 -->
         <div class="col-8 d-flex align-items-center">
           <ul class="d-flex gap-4">
             <li>
@@ -58,8 +51,11 @@ export default {
             </li>
           </ul>
         </div>
+        <!-- /col-8 -->
       </div>
+      <!-- /row -->
     </div>
+    <!-- /container -->
   </header>
   <!-- /header -->
 
@@ -183,6 +179,7 @@ export default {
                   </li>
                 </ul>
               </div>
+              <!-- /col-4 -->
               <div class="col-4">
                 <ul class="pt-3">
                   <li>
@@ -249,6 +246,7 @@ export default {
                   </li>
                 </ul>
               </div>
+              <!-- /col-4 -->
               <div class="col-4">
                 <ul class="pt-3">
                   <li>
@@ -285,40 +283,68 @@ export default {
                   </li>
                 </ul>
               </div>
-
+              <!-- /col-4 -->
             </div>
-
-
-
-
-
+            <!-- /row -->
           </div>
-          <div class="logo_dc col-6"></div>
+          <!-- /col-6 -->
+          <div class="logo_dc col-6">
+          </div>
+          <!-- /logo_dc col-6 -->
         </div>
+        <!-- /row -->
       </div>
+      <!-- /container -->
     </div>
+    <!-- /banner_bottom -->
   </main>
   <!-- /main -->
 
-
   <footer>
-
+    <div class="container">
+      <div class="row">
+        <div class="col-6 d-flex align-items-center">
+          <button>SING-UP NOW!</button>
+        </div>
+        <!-- col-6 -->
+        <div class="col-6 d-flex align-items-center justify-content-end">
+          <h4>FOLLOW US</h4>
+          <ul class="d-flex gap-2">
+            <li>
+              <img src="./assets/img/footer-facebook.png" alt="">
+            </li>
+            <li>
+              <img src="./assets/img/footer-twitter.png" alt="">
+            </li>
+            <li>
+              <img src="./assets/img/footer-youtube.png" alt="">
+            </li>
+            <li>
+              <img src="./assets/img/footer-pinterest.png" alt="">
+            </li>
+            <li>
+              <img src="./assets/img/footer-periscope.png" alt="">
+            </li>
+          </ul>
+        </div>
+        <!-- col-6 -->
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
   </footer>
   <!-- /footer -->
 </template>
 
-
-
-
-
-
-
-
-
-
-
-
 <style lang="scss">
+/* #region Utilities */
+ul {
+  list-style: none;
+}
+
+/* #endregion Utilities */
+
+/* #region Header */
 header {
   height: 100px;
   background-color: white;
@@ -331,12 +357,15 @@ header {
       color: black;
 
       &:hover {
-        color: blue;
+        color: #0282f9;
       }
     }
   }
 }
 
+/* #endregion Header */
+
+/* #region Main */
 
 main {
   height: calc(100vh - 232px);
@@ -344,7 +373,7 @@ main {
 
   .banner_top {
     height: 100px;
-    background-color: black;
+    background-color: #1c1c1c;
     display: flex;
     align-items: center;
     color: white;
@@ -352,7 +381,7 @@ main {
 
   .banner_center {
     height: 125px;
-    background-color: blue;
+    background-color: #0282f9;
     display: flex;
     align-items: center;
     position: relative;
@@ -390,18 +419,17 @@ main {
 
       a {
         text-decoration: none;
-        color: white;
+        color: rgb(165, 165, 165);
 
         &:hover {
-          color: blue;
+          color: rgb(232, 232, 240);
+        }
+
+        h4 {
+          color: white;
         }
       }
     }
-
-
-
-
-
 
     .logo_dc {
       background-image: url(./assets/img/dc-logo-bg.png);
@@ -410,17 +438,31 @@ main {
       margin-top: -5rem;
       z-index: 0;
     }
-
   }
-
-
-
 }
 
+/* #endregion Main */
+
+/* #region Footer */
 footer {
   height: 100px;
-  background-color: greenyellow;
+  background-color: #303030;
   position: relative;
   z-index: 500;
+  display: flex;
+  align-items: center;
+
+  button {
+    padding: 10px;
+    background-color: #303030;
+    border-color: #0282f9;
+    color: white;
+  }
+
+  h4 {
+    color: #0282f9;
+  }
 }
+
+/* #endregion Footer */
 </style>
