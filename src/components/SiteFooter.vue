@@ -55,7 +55,6 @@ footer {
   z-index: 500;
   display: flex;
   align-items: center;
-  margin-top: 3rem;
 
   button {
     padding: 10px;
