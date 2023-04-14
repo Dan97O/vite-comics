@@ -49,12 +49,13 @@ export default {
 <style lang="scss" scoped>
 /* #region Footer */
 footer {
-  height: 100px;
+  padding: 1.5rem 0;
   background-color: #303030;
   position: relative;
   z-index: 500;
   display: flex;
   align-items: center;
+  margin-top: 3rem;
 
   button {
     padding: 10px;

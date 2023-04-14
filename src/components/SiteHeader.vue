@@ -80,7 +80,7 @@ export default {
 header {
   display: flex;
   align-items: center;
-  height: 100px;
+  padding: 1rem 0;
   background-color: white;
 
   img {

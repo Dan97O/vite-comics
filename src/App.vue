@@ -20,21 +20,12 @@ export default {
 
 <template>
   <SiteHeader />
-  <!-- /SiteHeader -->
-
   <SiteMain />
-  <!-- /SiteMain -->
   <SiteFooter />
-  <!-- /SiteFooter -->
 </template>
 
 <style lang="scss">
 /* #region Utilities */
-body {
-  height: 100vh;
-  overflow-y: hidden;
-}
-
 ul {
   list-style: none;
 }

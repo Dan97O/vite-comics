@@ -262,11 +262,11 @@ export default {
 /* #region Main */
 
 main {
-  height: calc(100vh - 200px);
+
   background-color: yellow;
 
   .banner_top {
-    height: 100px;
+    padding: 2rem 0;
     background-color: #1c1c1c;
     display: flex;
     align-items: center;
@@ -274,7 +274,7 @@ main {
   }
 
   .banner_center {
-    height: 125px;
+    padding: 2rem 0;
     background-color: #0282f9;
     display: flex;
     align-items: center;
@@ -305,7 +305,6 @@ main {
 
   .banner_bottom {
     background-image: url(../assets/img/footer-bg.jpg);
-    height: calc(100vh - 200px - 225px);
 
     ul {
       list-style: none;
@@ -332,7 +331,7 @@ main {
 
     .logo_dc {
       background-image: url(../assets/img/dc-logo-bg.png);
-      height: 600px;
+      height: 500px;
       background-repeat: no-repeat;
       margin-top: -7rem;
       z-index: 0;
