@@ -21,19 +21,19 @@ export default {
           <h4>FOLLOW US</h4>
           <ul class="d-flex gap-2">
             <li>
-              <img src="./assets/img/footer-facebook.png" alt="">
+              <img src="../assets/img/footer-facebook.png" alt="">
             </li>
             <li>
-              <img src="./assets/img/footer-twitter.png" alt="">
+              <img src="../assets/img/footer-twitter.png" alt="">
             </li>
             <li>
-              <img src="./assets/img/footer-youtube.png" alt="">
+              <img src="../assets/img/footer-youtube.png" alt="">
             </li>
             <li>
-              <img src="./assets/img/footer-pinterest.png" alt="">
+              <img src="../assets/img/footer-pinterest.png" alt="">
             </li>
             <li>
-              <img src="./assets/img/footer-periscope.png" alt="">
+              <img src="../assets/img/footer-periscope.png" alt="">
             </li>
           </ul>
         </div>

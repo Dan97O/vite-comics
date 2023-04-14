@@ -120,15 +120,16 @@ export default {
         <img src="../assets/img/jumbotron.jpg" alt="">
       </div>
       <div class="container">
-        <button class="btn-outline-primary">CURRENT SERIES</button>
+        <button class="btn_series btn-outline-primary">CURRENT SERIES</button>
         <div class="row d-flex justify-content-center mt-3">
           <div class="col-10 d-flex flex-wrap justify-content-evenly g-2">
-
             <div class="my_card me-3" v-for="img in comics">
               <img :src="(img.thumb)" alt="">
               <div class="text"><span>{{ img.series }}</span></div>
             </div>
-
+          </div>
+          <div class=" d-flex justify-content-center my-3">
+            <button class="btn-outline-primary">LOAD MORE</button>
           </div>
         </div>
       </div>
@@ -364,9 +365,12 @@ main {
     .container {
       margin-top: -12px;
 
+      .btn_series {
+        margin-left: 110px;
+      }
+
       button {
         width: 160px;
-        margin-left: 110px;
         background-color: #0282f9;
         color: white;
       }
