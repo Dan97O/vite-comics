@@ -121,24 +121,13 @@ export default {
       </div>
       <div class="container">
         <button class="btn-outline-primary">CURRENT SERIES</button>
-        <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center mt-3">
           <div class="col-10 d-flex flex-wrap justify-content-evenly g-2">
 
             <div class="my_card me-3" v-for="img in comics">
               <img :src="(img.thumb)" alt="">
               <div class="text"><span>{{ img.series }}</span></div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
 
           </div>
         </div>
@@ -366,14 +355,20 @@ main {
     .jumbotron {
       img {
         height: 400px;
-        object-fit: fill;
+        object-fit: cover;
+        object-position: top;
         width: 100%;
       }
     }
 
     .container {
+      margin-top: -12px;
+
       button {
         width: 160px;
+        margin-left: 110px;
+        background-color: #0282f9;
+        color: white;
       }
 
       .my_card {
