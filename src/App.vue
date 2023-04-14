@@ -1,5 +1,9 @@
 <script>
+import SiteHeader from "./components/SiteHeader.vue";
 export default {
+  components: {
+    SiteHeader
+  },
   data() {
     return {
       message: "prova",
@@ -10,54 +14,8 @@ export default {
 </script>
 
 <template>
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-4 d-flex align-items-center">
-          <img class="img-fluid" src="./assets/img/dc-logo.png" alt="">
-        </div>
-        <!-- /col-4 -->
-        <div class="col-8 d-flex align-items-center">
-          <ul class="d-flex gap-4">
-            <li>
-              <a href="#">CHARACTERS</a>
-            </li>
-            <li>
-              <a href="#">COMICS</a>
-            </li>
-            <li>
-              <a href="#">MOVIES</a>
-            </li>
-            <li>
-              <a href="#">TV</a>
-            </li>
-            <li>
-              <a href="#">GAMES</a>
-            </li>
-            <li>
-              <a href="#">COLLECTIBLES</a>
-            </li>
-            <li>
-              <a href="#">VIDEOS</a>
-            </li>
-            <li>
-              <a href="#">FANS</a>
-            </li>
-            <li>
-              <a href="#">NEWS</a>
-            </li>
-            <li>
-              <a href="#">SHOP</a>
-            </li>
-          </ul>
-        </div>
-        <!-- /col-8 -->
-      </div>
-      <!-- /row -->
-    </div>
-    <!-- /container -->
-  </header>
-  <!-- /header -->
+  <SiteHeader />
+
 
   <main>
     <div class="banner_top">
@@ -348,35 +306,6 @@ ul {
 }
 
 /* #endregion Utilities */
-
-/* #region Header */
-header {
-  display: flex;
-  align-items: center;
-  height: 100px;
-  background-color: white;
-
-  img {
-    height: 80px;
-  }
-
-  ul {
-    list-style: none;
-    margin: 0;
-    flex-wrap: wrap;
-
-    a {
-      text-decoration: none;
-      color: black;
-
-      &:hover {
-        color: #0282f9;
-      }
-    }
-  }
-}
-
-/* #endregion Header */
 
 /* #region Main */
 
